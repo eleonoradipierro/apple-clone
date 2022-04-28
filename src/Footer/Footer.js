@@ -1,5 +1,5 @@
 import "./Footer.scss";
-import "./Homepage.scss";
+import "../Homepage/Homepage.scss";
 
 const Footer = () => {
   return (

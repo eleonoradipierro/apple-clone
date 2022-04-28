@@ -1,7 +1,7 @@
 import "./Homepage.scss";
 
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 import unicefImg from "../images/unicef_logo_dark__ejvlglygb3ee_large_2x.png";
 import iphoneseImg from "../images/logo_hero_iphonese__dtb7zrygggeq_largetall_2x.png";
