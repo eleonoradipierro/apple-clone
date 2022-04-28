@@ -1,2 +1,234 @@
 @import "../../public/styles/mixins.scss";
 @import "../../public/styles/variables.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+    "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+footer {
+  background-color: rgb(245, 245, 247);
+  padding: 1.25rem;
+  font-size: 0.75rem;
+  color: rgb(110, 110, 115);
+}
+
+.wrapper {
+  max-width: 61.25rem;
+  margin: 0 auto;
+}
+
+.footer-element {
+  color: rgb(119, 119, 124);
+  border-bottom: 0.0625rem solid rgb(210, 210, 215);
+  padding-bottom: 20px;
+}
+
+a {
+  color: rgb(66, 66, 69);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 0.25rem;
+}
+
+.link-blue {
+  color: rgb(2, 103, 204);
+}
+.link-white {
+  color: rgb(255, 255, 255);
+}
+
+.footer-head-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.625rem;
+  min-width: 65%;
+}
+
+.container__colItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__colItems__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0.625rem;
+}
+
+.footer-middle-element {
+  padding-bottom: 0.3125rem;
+}
+
+.container-items-rows {
+  display: flex;
+}
+
+.container-mobile-order {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-item-row {
+  border-right: 0.0625rem solid rgb(210, 210, 215);
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+}
+
+.container-items-rows:last-child {
+  border-right: none;
+}
+
+.container-items-rows:first-child {
+  padding-left: 0;
+}
+
+.copyright-language {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  gap: 0.1875rem;
+  width: 100%;
+}
+
+.container__colItems__list__boldElem {
+  font-weight: 500;
+  color: black;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.language-align {
+  text-align: end;
+}
+
+@media screen and (max-width: 878px) {
+  .copyright-language {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  .container-mobile-order {
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+  }
+}
+
+.under-nav {
+  display: flex;
+  background-color: rgb(245, 245, 247);
+  margin: 0 auto;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.small-text {
+  font-size: 15px;
+  align-self: center;
+}
+
+.unicef-img {
+  height: 30px;
+}
+
+.container-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-image-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0.625rem;
+  text-align: center;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: stretch;
+}
+
+.background-image-iphone13 {
+  background-image: url("../images/hero_iphone13pro_avail__iy77cld0zwii_largetall_2x.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  background-position: 50% 0px;
+}
+
+.background-image-iphonese {
+  background-image: url("../images/hero_iphonese_avail__eg8srhcnpo66_largetall_2x.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  background-position: 50% 0px;
+}
+
+.body-img {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  object-position: 50% -47px;
+}
+
+.margin-align-text {
+  margin-top: 25px;
+}
+
+.super-large-text {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.large-text {
+  font-size: 30px;
+}
+
+.medium-text {
+  font-size: 20px;
+}
+
+.link-container {
+  padding: 10px;
+}
+
+.iphone-se-img {
+  height: 64px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0.625rem;
+  min-width: 65%;
+}
