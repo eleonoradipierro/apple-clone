@@ -8,11 +8,13 @@ import iphoneseImg from "../images/logo_hero_iphonese__dtb7zrygggeq_largetall_2x
 
 const UnicefBlock = () => {
   return (
-    <div class="under-nav">
-      <img class="unicef-img" src={unicefImg} />
-      <a class="link-blue small-text" href="">
-        Donate to support families affected by the war in Ukraine
+    <div className="unicefSection">
+      <div className="unicef">
+        <img className="unicef__image" src={unicefImg} />
+        <a className="unicef__link link-blue small-text" href="">
+          <p>Donate to support families affected by the war in Ukraine</p>
       </a>
+    </div>
     </div>
   );
 };

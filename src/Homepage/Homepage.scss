@@ -142,22 +142,39 @@ li {
   }
 }
 
-.under-nav {
-  display: flex;
+.unicefSection {
+  @include flex($justify: center);
+  gap: 0.625rem;
+
   background-color: rgb(245, 245, 247);
   margin: 0 auto;
-  justify-content: center;
-  gap: 10px;
-  padding: 20px 0;
+  padding: 1.25rem 0;
+}
+
+.unicef {
+  @include flex($justify: center, $align: center, $direction: column);
+
+  @include media(tablet) {
+    @include flex();
+  }
+
+  &__image {
+    @include flex($direction: column, $align: center);
+    height: 1.875rem;
+  }
+  &__link {
+    width: 12.5rem;
+    text-align: center;
+
+    @include media(tablet) {
+      width: initial;
+    }
+  }
 }
 
 .small-text {
   font-size: 15px;
   align-self: center;
-}
-
-.unicef-img {
-  height: 30px;
 }
 
 .container-images {
