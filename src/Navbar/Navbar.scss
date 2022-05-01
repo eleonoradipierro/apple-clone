@@ -1,3 +1,6 @@
+@import "../../public/styles/mixins.scss";
+@import "../../public/styles/variables.scss";
+
 nav {
   background-color: black;
   position: sticky;
@@ -14,12 +17,19 @@ nav {
 .nav-btn:hover {
   background: none;
   opacity: 1;
+  cursor: pointer;
 }
 
 .nav-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @include media(desktop) {
+    justify-content: space-evenly;
+  }
 }
 
 .search-image {
@@ -27,4 +37,21 @@ nav {
   height: 42px;
   object-fit: none;
   object-position: 50% 0px;
+}
+
+.bars {
+  color: white;
+  font-size: 30px;
+
+  @include media(tablet) {
+    display: none;
+  }
+}
+
+.mobileHide {
+  display: none;
+
+  @include media(tablet) {
+    display: block;
+  }
 }

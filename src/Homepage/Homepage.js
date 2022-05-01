@@ -11,50 +11,47 @@ const UnicefBlock = () => {
     <div className="unicefSection">
       <div className="unicef">
         <img className="unicef__image" src={unicefImg} />
-        <a className="unicef__link link-blue small-text" href="">
+        <a className="unicef__link unicef__link-blue" href="">
           <p>Donate to support families affected by the war in Ukraine</p>
-      </a>
-    </div>
+        </a>
+      </div>
     </div>
   );
 };
 
 const Body = () => {
   return (
-    <div class="container-images">
-      <div class="container-image-text">
-        <div class="background-image-iphone13">
-          <h2 class="super-large-text margin-align-text">iPhone 13 Pro</h2>
-          <h3 class="large-text">Oh. So. Pro.</h3>
-          <div class="link-container">
-            <a class="link-blue medium-text" href="">
-              Learn more
-            </a>
-            <a class="link-blue medium-text" href="">
-              Buy
-            </a>
-          </div>
+    <section className="imageSection">
+      <div className="iphone13Section iphone13Section--background">
+        <h1>iPhone 13 Pro</h1>
+        <h3>Oh. So. Pro.</h3>
+        <div className="linkContainer">
+          <a href="">
+            Learn more <span>&gt;</span>
+          </a>
+
+          <a href="">
+            Buy<span>&gt;</span>
+          </a>
         </div>
       </div>
 
-      <div class="container-image-text">
-        <div class="background-image-iphonese">
-          <h3 class="medium-text margin-align-text">The new</h3>
-          <div>
-            <img src={iphoneseImg} class="iphone-se-img" />
-          </div>
-          <h3 class="large-text">Love the power. Love the price.</h3>
-          <div class="link-container">
-            <a class="link-blue medium-text" href="">
-              Learn more
-            </a>
-            <a class="link-blue medium-text" href="">
-              Buy
-            </a>
-          </div>
+      <div className="iphoneseSection iphoneseSection--background">
+        <h4>The new</h4>
+        <div>
+          <img src={iphoneseImg} className="iphoneseSection__image" />
+        </div>
+        <h3>Love the power. Love the price.</h3>
+        <div className="linkContainer">
+          <a href="">
+            Learn more <span>&gt;</span>
+          </a>
+          <a href="">
+            Buy<span>&gt;</span>
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -14,67 +14,72 @@ import supportNav from "../images/globalnav_links_support_image__bw9kctll7u3m_la
 import searchNav from "../images/globalnav_search_image__cbllq1gkias2_large.svg";
 import bagNav from "../images/globalnav_bag_image__yzte50i47ciu_large.svg";
 
+import { useEffect, useState } from "react";
+
 const Navbar = () => {
   return (
     <>
       <nav>
         <ul class="nav-container">
+          <li className="bars">
+            <span className="nav-btn">=</span>
+          </li>
           <li>
             <a class="nav-btn">
               <img src={logoNav} />
             </a>
           </li>
-          <li>
+          <li className="mobileHide">
             <button class="nav-btn">
               <img src={storeNav} />
             </button>
           </li>
-          <li>
+          <li className="mobileHide">
             <button class="nav-btn">
               <img src={macNav} />
             </button>
           </li>
-          <li>
+          <li className="mobileHide">
             <button class="nav-btn">
               <img src={ipadNav} />
             </button>
           </li>
-          <li>
+          <li className="mobileHide">
             <button class="nav-btn">
               <img src={iphoneNav} />
             </button>
           </li>
-          <li>
+          <li className="mobileHide">
             <button class="nav-btn">
               <img src={watchNav} />
             </button>
           </li>
-          <li>
+          <li className="mobileHide">
             <button class="nav-btn">
               <img src={airpodsNav} />
             </button>
           </li>
-          <li>
+          <li className="mobileHide">
             <button class="nav-btn">
               <img src={tvhomeNav} />
             </button>
           </li>
-          <li>
+          <li className="mobileHide">
             <button class="nav-btn">
               <img src={onlyonappleNav} />
             </button>
           </li>
-          <li>
+          <li className="mobileHide">
             <button class="nav-btn">
               <img src={accessoriesNav} />
             </button>
           </li>
-          <li>
+          <li className="mobileHide">
             <button class="nav-btn">
               <img src={supportNav} />
             </button>
           </li>
-          <li>
+          <li className="mobileHide">
             <button class="nav-btn">
               <img class="search-image" src={searchNav} />
             </button>
