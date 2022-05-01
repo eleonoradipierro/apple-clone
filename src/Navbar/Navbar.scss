@@ -21,9 +21,8 @@ nav {
 }
 
 .nav-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include flex($justify: space-between);
+
   margin-left: 20px;
   margin-right: 20px;
 

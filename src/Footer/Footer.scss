@@ -12,7 +12,7 @@
 }
 
 footer {
-  background-color: rgb(245, 245, 247);
+  background-color: $primary-bg-color;
   padding: 20px;
   font-size: 12px;
   color: rgb(110, 110, 115);
@@ -24,7 +24,7 @@ footer {
 }
 
 a {
-  color: rgb(66, 66, 69);
+  color: $link-primary-color;
   text-decoration: none;
 }
 
@@ -40,6 +40,7 @@ li {
   margin: 4px;
 }
 
+//refactor needed here
 @media screen and (max-width: 54.875rem) {
   .copyright-language {
     display: grid;
@@ -63,7 +64,7 @@ li {
 }
 
 .linkContainer a {
-  color: rgb(2, 103, 204);
+  color: $link-body-color;
 }
 
 .footerMenuMobile {
@@ -75,8 +76,7 @@ li {
     width: 100%;
 
     & > li {
-      display: flex;
-      justify-content: space-between;
+      @include flex($justify: space-between);
       cursor: pointer;
       border-bottom: 1px solid #e3e3e7;
       padding: 10px;
@@ -107,19 +107,16 @@ li {
   display: none;
 
   @include media(desktop) {
-    display: flex;
-    justify-content: space-between;
+    @include flex($justify: space-between);
     padding-bottom: 10px;
     min-width: 65%;
 
     &__items {
-      display: flex;
-      flex-direction: column;
+      @include flex($direction: column);
     }
 
     &__list {
-      display: flex;
-      flex-direction: column;
+      @include flex($direction: column);
       padding: 10px;
 
       &__boldElem {
@@ -159,7 +156,7 @@ li {
 }
 
 .blueLink {
-  color: rgb(2, 103, 204);
+  color: $link-body-color;
 }
 
 .footerCredits {
@@ -260,7 +257,7 @@ li {
 }
 
 .link-blue {
-  color: rgb(2, 103, 204);
+  color: $link-body-color;
 }
 .link-white {
   color: rgb(255, 255, 255);
