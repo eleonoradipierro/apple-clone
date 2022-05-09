@@ -14,81 +14,86 @@ import supportNav from "../images/globalnav_links_support_image__bw9kctll7u3m_la
 import searchNav from "../images/globalnav_search_image__cbllq1gkias2_large.svg";
 import bagNav from "../images/globalnav_bag_image__yzte50i47ciu_large.svg";
 
-import { useEffect, useState } from "react";
+const NavButton = (props) => {
+  const { srcImg, listClass, imageClass } = props;
+  return (
+    <li className={listClass}>
+      <a className="nav-btn">
+        <img src={srcImg} className={imageClass} />
+      </a>
+    </li>
+  );
+};
 
 const Navbar = () => {
+  const mobileHideElements = [
+    {
+      id: 0,
+      img: storeNav,
+    },
+    {
+      id: 1,
+      img: macNav,
+    },
+    {
+      id: 2,
+      img: ipadNav,
+    },
+    {
+      id: 3,
+      img: iphoneNav,
+    },
+    {
+      id: 4,
+      img: watchNav,
+    },
+    {
+      id: 5,
+      img: airpodsNav,
+    },
+    {
+      id: 6,
+      img: tvhomeNav,
+    },
+    {
+      id: 7,
+      img: onlyonappleNav,
+    },
+    {
+      id: 8,
+      img: accessoriesNav,
+    },
+    {
+      id: 9,
+      img: supportNav,
+    },
+  ];
   return (
     <>
       <nav>
-        <ul class="nav-container">
+        <ul className="nav-container">
           <li className="bars">
             <span className="nav-btn">=</span>
           </li>
-          <li>
-            <a class="nav-btn">
-              <img src={logoNav} />
-            </a>
-          </li>
-          <li className="mobileHide">
-            <button class="nav-btn">
-              <img src={storeNav} />
-            </button>
-          </li>
-          <li className="mobileHide">
-            <button class="nav-btn">
-              <img src={macNav} />
-            </button>
-          </li>
-          <li className="mobileHide">
-            <button class="nav-btn">
-              <img src={ipadNav} />
-            </button>
-          </li>
-          <li className="mobileHide">
-            <button class="nav-btn">
-              <img src={iphoneNav} />
-            </button>
-          </li>
-          <li className="mobileHide">
-            <button class="nav-btn">
-              <img src={watchNav} />
-            </button>
-          </li>
-          <li className="mobileHide">
-            <button class="nav-btn">
-              <img src={airpodsNav} />
-            </button>
-          </li>
-          <li className="mobileHide">
-            <button class="nav-btn">
-              <img src={tvhomeNav} />
-            </button>
-          </li>
-          <li className="mobileHide">
-            <button class="nav-btn">
-              <img src={onlyonappleNav} />
-            </button>
-          </li>
-          <li className="mobileHide">
-            <button class="nav-btn">
-              <img src={accessoriesNav} />
-            </button>
-          </li>
-          <li className="mobileHide">
-            <button class="nav-btn">
-              <img src={supportNav} />
-            </button>
-          </li>
-          <li className="mobileHide">
-            <button class="nav-btn">
-              <img class="search-image" src={searchNav} />
-            </button>
-          </li>
-          <li>
-            <button class="nav-btn">
-              <img src={bagNav} />
-            </button>
-          </li>
+
+          <NavButton srcImg={logoNav} />
+
+          {mobileHideElements.map((current) => {
+            return (
+              <NavButton
+                key={current.id}
+                srcImg={current.img}
+                listClass="mobileHide"
+              />
+            );
+          })}
+
+          <NavButton
+            srcImg={searchNav}
+            listClass="mobileHide"
+            imageClass="search-image"
+          />
+          <NavButton srcImg={bagNav} />
         </ul>
       </nav>
     </>
