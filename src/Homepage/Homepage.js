@@ -17,7 +17,7 @@ const UnicefBlock = () => {
     <div className="unicefSection">
       <div className="unicef">
         <img className="unicef__image" src={unicefImg} />
-        <a className="unicef__link unicef__link-blue" href="">
+        <a className="unicef__link unicef__link--blue" href="">
           <p>Donate to support families affected by the war in Ukraine</p>
         </a>
       </div>
@@ -31,7 +31,7 @@ const Body = () => {
       <div className="iphone13Section iphone13Section--background">
         <h1>iPhone 13 Pro</h1>
         <h3>Oh. So. Pro.</h3>
-        <div className="linkContainer">
+        <div className="bluelinkContainer">
           <a href="">
             Learn more <span>&gt;</span>
           </a>
@@ -48,7 +48,7 @@ const Body = () => {
           <img src={iphoneseImg} className="iphoneseSection__image" />
         </div>
         <h3>Love the power. Love the price.</h3>
-        <div className="linkContainer">
+        <div className="bluelinkContainer">
           <a href="">
             Learn more <span>&gt;</span>
           </a>
@@ -63,7 +63,7 @@ const Body = () => {
           <img src={ipadAirImg} className="ipadAirSection__image" />
         </div>
         <h4>Light. Bright. Full of might</h4>
-        <div className="linkContainer">
+        <div className="bluelinkContainer">
           <a href="">
             Learn more <span>&gt;</span>
           </a>
@@ -82,7 +82,7 @@ const Body = () => {
             The Worldwide Developers Conference is coming. Join us online 6-10
             June.
           </h4>
-          <div className="linkContainer">
+          <div className="bluelinkContainer">
             <a href="">
               Learn more <span>&gt;</span>
             </a>
@@ -94,7 +94,7 @@ const Body = () => {
             <img src={watchImg} className="watchSection__image" />
           </div>
           <h4>It's out largest display yet.</h4>
-          <div className="linkContainer">
+          <div className="bluelinkContainer">
             <a href="">
               Learn more <span>&gt;</span>
             </a>
@@ -107,7 +107,7 @@ const Body = () => {
         <div className="imacSection imacSection--background">
           <h1>Studio Display</h1>
           <h4>A sight to be bold.</h4>
-          <div className="linkContainer">
+          <div className="bluelinkContainer">
             <a href="">
               Learn more <span>&gt;</span>
             </a>
@@ -120,7 +120,7 @@ const Body = () => {
         <div className="macSection macSection--background">
           <h1>Mac Studio</h1>
           <h4>Empower station.</h4>
-          <div className="linkContainer">
+          <div className="bluelinkContainer">
             <a href="">
               Learn more <span>&gt;</span>
             </a>
@@ -135,7 +135,7 @@ const Body = () => {
             <img src={fitnessImg} className="fitnessSection__image" />
           </div>
           <h4>It's out largest display yet.</h4>
-          <div className="linkContainer">
+          <div className="bluelinkContainer">
             <a href="">
               Learn more <span>&gt;</span>
             </a>
