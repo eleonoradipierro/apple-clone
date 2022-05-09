@@ -5,6 +5,12 @@ import Footer from "../Footer/Footer";
 
 import unicefImg from "../images/unicef_logo_dark__ejvlglygb3ee_large_2x.png";
 import iphoneseImg from "../images/logo_hero_iphonese__dtb7zrygggeq_largetall_2x.png";
+import ipadAirImg from "../images/hero_logo_ipadair__em8hublxa0om_largetall_2x.png";
+import wwdc22Img from "../images/wwdc22_logo__f39kr8derwya_large_2x.png";
+import fitnessImg from "../images/fitness_plus_logo__6k5gczpl7oyu_large.png";
+import watchImg from "../images/watch-studio-series7-logo.jpeg";
+import tvImg from "../images/logo_light__cfvl40z2nzau_large_2x.png";
+import shiningGirls from "../images/promo_logo_shining_girls__cqmv34ixg4wi_large_2x.png";
 
 const UnicefBlock = () => {
   return (
@@ -49,6 +55,109 @@ const Body = () => {
           <a href="">
             Buy<span>&gt;</span>
           </a>
+        </div>
+      </div>
+
+      <div className="ipadAirSection ipadAirSection--background">
+        <div>
+          <img src={ipadAirImg} className="ipadAirSection__image" />
+        </div>
+        <h4>Light. Bright. Full of might</h4>
+        <div className="linkContainer">
+          <a href="">
+            Learn more <span>&gt;</span>
+          </a>
+          <a href="">
+            Buy<span>&gt;</span>
+          </a>
+        </div>
+      </div>
+
+      <div className="gridItems">
+        <div className="wwdc22Section wwdc22Section--background">
+          <div>
+            <img src={wwdc22Img} className="wwdc22Section__image" />
+          </div>
+          <h4>
+            The Worldwide Developers Conference is coming. Join us online 6-10
+            June.
+          </h4>
+          <div className="linkContainer">
+            <a href="">
+              Learn more <span>&gt;</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="watchSection watchSection--background">
+          <div>
+            <img src={watchImg} className="watchSection__image" />
+          </div>
+          <h4>It's out largest display yet.</h4>
+          <div className="linkContainer">
+            <a href="">
+              Learn more <span>&gt;</span>
+            </a>
+            <a href="">
+              Buy<span>&gt;</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="imacSection imacSection--background">
+          <h1>Studio Display</h1>
+          <h4>A sight to be bold.</h4>
+          <div className="linkContainer">
+            <a href="">
+              Learn more <span>&gt;</span>
+            </a>
+            <a href="">
+              Buy<span>&gt;</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="macSection macSection--background">
+          <h1>Mac Studio</h1>
+          <h4>Empower station.</h4>
+          <div className="linkContainer">
+            <a href="">
+              Learn more <span>&gt;</span>
+            </a>
+            <a href="">
+              Buy<span>&gt;</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="fitnessSection fitnessSection--background">
+          <div>
+            <img src={fitnessImg} className="fitnessSection__image" />
+          </div>
+          <h4>It's out largest display yet.</h4>
+          <div className="linkContainer">
+            <a href="">
+              Learn more <span>&gt;</span>
+            </a>
+            <a href="">
+              Shop Apple Watch<span>&gt;</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="tvSection tvSection--background">
+          <div>
+            <img src={tvImg} className="tvSection__image" />
+          </div>
+          <div>
+            <img src={shiningGirls} className="tvSection__shiningGirls" />
+          </div>
+          <h4> Realiti is a matter of perspective</h4>
+          <div className="whitelinkContainer">
+            <a href="">
+              Stream now <span>&gt;</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

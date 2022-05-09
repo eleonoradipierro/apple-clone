@@ -41,6 +41,8 @@
 
 .imageSection {
   @include flex($direction: column, $align: center);
+
+  gap: 10px;
 }
 
 .iphone13Section {
@@ -91,6 +93,35 @@
   }
 }
 
+.ipadAirSection {
+  @include flex($direction: column, $align: center);
+
+  padding: 3.625rem;
+  text-align: center;
+
+  color: white;
+  &--background {
+    background-image: url("../images/hero_ipadair_avail__dsqv5nn0tpsi_small_2x.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 35.75rem;
+    background-position: 50% 0rem;
+
+    @include media(tablet) {
+      background-image: url("../images/hero_ipadair_avail__dsqv5nn0tpsi_mediumtall_2x.jpg");
+      height: 43.75rem;
+    }
+  }
+
+  &__image {
+    height: 2rem;
+
+    @include media(tablet) {
+      height: 3rem;
+    }
+  }
+}
+
 .linkContainer {
   display: flex;
   gap: 1.25rem;
@@ -102,5 +133,199 @@
 
   & a {
     color: $link-body-color;
+  }
+}
+
+.gridItems {
+  @include flex($direction: column);
+  gap: 10px;
+  width: 100%;
+  @include media(tablet) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 97%;
+    margin: 15px;
+  }
+}
+
+.wwdc22Section {
+  @include flex($direction: column, $align: center, $justify: flex-end);
+
+  padding: 3.625rem;
+  text-align: center;
+
+  color: white;
+
+  &--background {
+    background-image: url("../images/promo_wwdc_announce__dr6w8rxice4i_small_2x.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 35.75rem;
+    background-position: 50% 0rem;
+
+    @include media(tablet) {
+      background-image: url("../images/promo_wwdc_announce__dr6w8rxice4i_small_2x.jpg");
+      height: 43.75rem;
+    }
+  }
+
+  &__image {
+    height: 2rem;
+
+    @include media(tablet) {
+      height: 3rem;
+    }
+  }
+}
+
+.watchSection {
+  @include flex($direction: column, $align: center);
+
+  padding: 3.625rem;
+  text-align: center;
+
+  color: white;
+
+  &--background {
+    background-image: url("../images/promo_watch_lte__djeaso7ukrsm_small_2x.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 35.75rem;
+    background-position: 50% 0rem;
+
+    @include media(tablet) {
+      background-image: url("../images/promo_watch_lte__djeaso7ukrsm_medium_2x.jpg");
+      height: 43.75rem;
+    }
+  }
+
+  &__image {
+    height: 4rem;
+
+    @include media(tablet) {
+      height: 3rem;
+    }
+  }
+}
+
+.imacSection {
+  @include flex($direction: column, $align: center);
+
+  padding: 3.625rem;
+  text-align: center;
+
+  &--background {
+    background-image: url("../images/promo_studiodisplay_avail__d1cx9j73ooq6_small_2x.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 35.75rem;
+    background-position: 50% 0rem;
+
+    @include media(tablet) {
+      background-image: url("../images/promo_studiodisplay_avail__d1cx9j73ooq6_medium_2x.jpg");
+      height: 43.75rem;
+    }
+  }
+}
+
+.macSection {
+  @include flex($direction: column, $align: center);
+
+  padding: 3.625rem;
+  text-align: center;
+
+  &--background {
+    background-image: url("../images/promo_macstudio_avail__byhwkp0o4gty_small_2x.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 35.75rem;
+    background-position: 50% 0rem;
+
+    @include media(tablet) {
+      background-image: url("../images/promo_macstudio_avail__byhwkp0o4gty_medium_2x.jpg");
+      height: 43.75rem;
+    }
+  }
+}
+
+.fitnessSection {
+  @include flex($direction: column, $align: center);
+
+  padding: 3.625rem;
+  text-align: center;
+
+  &--background {
+    background-image: url("../images/tile_applefitness__fdk8xvz0dvu6_small_2x.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 35.75rem;
+    background-position: 50% 0rem;
+
+    @include media(tablet) {
+      background-image: url("../images/tile_applefitness__fdk8xvz0dvu6_medium_2x.jpg");
+      height: 43.75rem;
+    }
+  }
+
+  &__image {
+    height: 2rem;
+
+    @include media(tablet) {
+      height: 3rem;
+    }
+  }
+}
+
+.tvSection {
+  @include flex($direction: column, $align: center, $justify: flex-end);
+
+  padding: 3.625rem;
+  text-align: center;
+
+  gap: 10px;
+
+  color: white;
+
+  &--background {
+    background-image: url("../images/promo_shining_girls__dcjn8g4xb2qa_small_2x.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 35.75rem;
+    background-position: 50% 0rem;
+
+    @include media(tablet) {
+      background-image: url("../images/promo_shining_girls__dcjn8g4xb2qa_medium_2x.jpg");
+      height: 43.75rem;
+    }
+  }
+
+  &__image {
+    height: 2rem;
+
+    @include media(tablet) {
+      height: 3rem;
+    }
+  }
+
+  &__shiningGirls {
+    height: 4rem;
+
+    @include media(tablet) {
+      height: 3rem;
+    }
+  }
+}
+
+.whitelinkContainer {
+  display: flex;
+  gap: 1.25rem;
+  padding: 0.625rem;
+
+  @include media(tablet) {
+    font-size: 20px;
+  }
+
+  & a {
+    color: white;
   }
 }
