@@ -8,7 +8,7 @@ import iphoneseImg from "../images/logo_hero_iphonese__dtb7zrygggeq_largetall_2x
 import ipadAirImg from "../images/hero_logo_ipadair__em8hublxa0om_largetall_2x.png";
 import wwdc22Img from "../images/wwdc22_logo__f39kr8derwya_large_2x.png";
 import fitnessImg from "../images/fitness_plus_logo__6k5gczpl7oyu_large.png";
-import watchImg from "../images/watch-studio-series7-logo.jpeg";
+import watchImg from "../images/promo_logo_watch_lte__emrof7zzkriq_small_2x.png";
 import tvImg from "../images/logo_light__cfvl40z2nzau_large_2x.png";
 import shiningGirls from "../images/promo_logo_shining_girls__cqmv34ixg4wi_large_2x.png";
 

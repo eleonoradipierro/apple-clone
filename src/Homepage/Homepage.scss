@@ -42,7 +42,7 @@
 .imageSection {
   @include flex($direction: column, $align: center);
 
-  gap: 10px;
+  gap: 15px;
 }
 
 .iphone13Section {
@@ -142,9 +142,8 @@
   width: 100%;
   @include media(tablet) {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49.5% 49.5%;
     width: 97%;
-    margin: 15px;
   }
 }
 
@@ -165,7 +164,7 @@
 
     @include media(tablet) {
       background-image: url("../images/promo_wwdc_announce__dr6w8rxice4i_small_2x.jpg");
-      height: 43.75rem;
+      height: 36.75rem;
     }
   }
 
@@ -194,8 +193,8 @@
     background-position: 50% 0rem;
 
     @include media(tablet) {
-      background-image: url("../images/promo_watch_lte__djeaso7ukrsm_medium_2x.jpg");
-      height: 43.75rem;
+      background-image: url("../images/promo_watch_lte__djeaso7ukrsm_small_2x.jpg");
+      height: 36.75rem;
     }
   }
 
@@ -223,7 +222,7 @@
 
     @include media(tablet) {
       background-image: url("../images/promo_studiodisplay_avail__d1cx9j73ooq6_medium_2x.jpg");
-      height: 43.75rem;
+      height: 36.75rem;
     }
   }
 }
@@ -243,7 +242,7 @@
 
     @include media(tablet) {
       background-image: url("../images/promo_macstudio_avail__byhwkp0o4gty_medium_2x.jpg");
-      height: 43.75rem;
+      height: 36.75rem;
     }
   }
 }
@@ -263,7 +262,7 @@
 
     @include media(tablet) {
       background-image: url("../images/tile_applefitness__fdk8xvz0dvu6_medium_2x.jpg");
-      height: 43.75rem;
+      height: 36.75rem;
     }
   }
 
@@ -271,7 +270,7 @@
     height: 2rem;
 
     @include media(tablet) {
-      height: 3rem;
+      height: 2rem;
     }
   }
 }
@@ -295,7 +294,7 @@
 
     @include media(tablet) {
       background-image: url("../images/promo_shining_girls__dcjn8g4xb2qa_medium_2x.jpg");
-      height: 43.75rem;
+      height: 36.75rem;
     }
   }
 
