@@ -13,24 +13,24 @@
 
 footer {
   background-color: $primary-bg-color;
-  padding: 20px;
-  font-size: 12px;
+  padding: 1.25rem;
+  font-size: 0.75rem;
   color: rgb(110, 110, 115);
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 .wrapper {
-  max-width: 980px;
+  max-width: 61.25rem;
   margin: 0 auto;
 }
 
 a {
   color: $link-primary-color;
   text-decoration: none;
-}
 
-a:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 ul {
@@ -38,39 +38,24 @@ ul {
 }
 
 li {
-  margin: 4px;
-}
-
-//refactor needed here
-@media screen and (max-width: 54.875rem) {
-  .copyright-language {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 16px;
-  }
-
-  .container-mobile-order {
-    display: flex;
-    flex-wrap: wrap;
-    order: 2;
-  }
+  margin: 0.25rem;
 }
 
 .linkContainer {
   padding: 0.625rem;
 
   @include media(tablet) {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
-}
 
-.linkContainer a {
-  color: $link-body-color;
+  & > a {
+    color: $link-body-color;
+  }
 }
 
 .footerMenuMobile {
   @include flex($direction: column);
-  margin: 10px;
+  margin: 0.625rem;
   width: 100%;
 
   &__items {
@@ -79,11 +64,11 @@ li {
     & > li {
       @include flex($justify: space-between);
       cursor: pointer;
-      border-bottom: 1px solid #e3e3e7;
-      padding: 10px;
+      border-bottom: 0.0625rem solid rgb(227, 227, 231);
+      padding: 0.625rem;
 
       &:hover {
-        color: #222;
+        color: rgb(34, 34, 34);
       }
     }
 
@@ -99,8 +84,8 @@ li {
   padding-left: 1.5rem;
 
   & > li {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
   }
 }
 
@@ -109,7 +94,7 @@ li {
 
   @include media(desktop) {
     @include flex($justify: space-between);
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     min-width: 65%;
 
     &__items {
@@ -118,11 +103,11 @@ li {
 
     &__list {
       @include flex($direction: column);
-      padding: 10px;
+      padding: 0.625rem;
 
       &__boldElem {
         font-weight: 500;
-        color: black;
+        color: rgb(0, 0, 0);
       }
     }
   }
@@ -133,13 +118,13 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .footerTopElement {
   color: rgb(119, 119, 124);
   padding-bottom: 1.25rem;
-  border-bottom: 1px solid rgb(210, 210, 215);
+  border-bottom: 0.0625rem solid rgb(210, 210, 215);
 }
 
 .footerBottomElement {
@@ -148,11 +133,11 @@ li {
   margin-bottom: 0.55rem;
 
   @include media(desktop) {
-    border-bottom: 1px solid rgb(210, 210, 215);
+    border-bottom: 0.0625rem solid rgb(210, 210, 215);
   }
 
   &--middle {
-    padding-bottom: 5px;
+    padding-bottom: 0.3125rem;
   }
 }
 
@@ -161,105 +146,26 @@ li {
 }
 
 .footerCredits {
-  display: flex;
-  flex-direction: column;
+  @include flex($direction: column);
 
   &__items {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    @include flex($justify: space-between, $wrap: wrap, $gap: 0.1875rem);
 
     padding: 0;
-    gap: 3px;
     width: 100%;
   }
   &__order {
-    display: flex;
-
+    @include flex();
     &__details {
-      display: flex;
+      @include flex();
 
-      border-right: 1px solid rgb(210, 210, 215);
-      padding-right: 10px;
-      padding-left: 10px;
+      border-right: 0.0625rem solid rgb(210, 210, 215);
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
     }
 
     &__languageAlign {
       text-align: end;
     }
   }
-}
-
-.container-items-rows {
-  display: flex;
-}
-
-.container-mobile-order {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.single-item-row {
-  border-right: 1px solid rgb(210, 210, 215);
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.container-items-rows:last-child {
-  border-right: none;
-}
-
-.container-items-rows:first-child {
-  padding-left: 0;
-}
-
-.copyright-language {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  gap: 3px;
-  width: 100%;
-}
-
-.language-align {
-  text-align: end;
-}
-
-.footer-head-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-middle-element {
-  padding-bottom: 5px;
-}
-
-.col-container {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 10px;
-  min-width: 65%;
-}
-
-.container__colItems {
-  display: flex;
-  flex-direction: column;
-}
-
-.container__colItems__list {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-
-.container__colItems__list__boldElem {
-  font-weight: 500;
-  color: black;
-}
-
-.link-blue {
-  color: $link-body-color;
-}
-.link-white {
-  color: rgb(255, 255, 255);
 }
