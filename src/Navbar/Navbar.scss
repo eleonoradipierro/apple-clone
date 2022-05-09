@@ -27,8 +27,7 @@ nav {
   margin-right: 20px;
 
   @include media(desktop) {
-    justify-content: center;
-    gap: 45px;
+    @include flex($justify: center, $gap: 2.8125rem);
   }
 }
 
