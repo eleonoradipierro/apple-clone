@@ -8,19 +8,19 @@ nav {
   top: 0;
 }
 
-.nav-btn {
+.navBtn {
   border: none;
   background: none;
   opacity: 0.7;
+
+  &:hover {
+    background: none;
+    opacity: 1;
+    cursor: pointer;
+  }
 }
 
-.nav-btn:hover {
-  background: none;
-  opacity: 1;
-  cursor: pointer;
-}
-
-.nav-container {
+.navContainer {
   @include flex($justify: space-between);
 
   margin-left: 20px;
@@ -32,19 +32,23 @@ nav {
   }
 }
 
-.search-image {
+.searchImage {
   width: 195%;
   height: 42px;
   object-fit: none;
   object-position: 50% 0px;
 }
 
-.bars {
+.burgerMenu {
   color: white;
   font-size: 30px;
 
   @include media(tablet) {
     display: none;
+  }
+
+  &__btn {
+    @extend .navBtn;
   }
 }
 

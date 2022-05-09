@@ -18,7 +18,7 @@ const NavButton = (props) => {
   const { srcImg, listClass, imageClass } = props;
   return (
     <li className={listClass}>
-      <a className="nav-btn">
+      <a className="navBtn">
         <img src={srcImg} className={imageClass} />
       </a>
     </li>
@@ -71,9 +71,9 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <ul className="nav-container">
-          <li className="bars">
-            <span className="nav-btn">=</span>
+        <ul className="navContainer">
+          <li className="burgerMenu">
+            <span className="burgerMenu__btn">=</span>
           </li>
 
           <NavButton srcImg={logoNav} />
@@ -91,7 +91,7 @@ const Navbar = () => {
           <NavButton
             srcImg={searchNav}
             listClass="mobileHide"
-            imageClass="search-image"
+            imageClass="searchImage"
           />
           <NavButton srcImg={bagNav} />
         </ul>
