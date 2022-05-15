@@ -96,8 +96,8 @@ const Footer = () => {
             Restrictions and other <a href="#top">terms</a> apply.
           </div>
 
-          <MobileFooter allSubmenu={submenu} />
-          <DesktopFooter allSubmenu={submenu} />
+          <MobileFooter allSubmenu={submenu.submenu} />
+          <DesktopFooter allSubmenu={submenu.submenu} />
         </div>
 
         <div>
