@@ -36,7 +36,7 @@ const MobileFooter = (props) => {
                 {menu.submenu.map((current, j) => {
                   return (
                     <li key={j}>
-                      <a href="">{current}</a>
+                      <a href="#top">{current}</a>
                     </li>
                   );
                 })}
@@ -61,7 +61,7 @@ const DesktopFooter = (props) => {
               {menu.submenu.map((current, j) => {
                 return (
                   <li key={j}>
-                    <a href="">{current}</a>
+                    <a href="#top">{current}</a>
                   </li>
                 );
               })}
@@ -183,7 +183,7 @@ const Footer = () => {
             Apple TV+ is £4.99/month after free trial. One subscription per
             Family Sharing group. Offer valid for three months after eligible
             device activation. Plan automatically renews until cancelled.
-            Restrictions and other <a href="">terms</a> apply.
+            Restrictions and other <a href="#top">terms</a> apply.
           </div>
 
           <MobileFooter allSubmenu={allSubmenu} />
@@ -193,11 +193,11 @@ const Footer = () => {
         <div>
           <div className="footerBottomElement footerElement--middle">
             More ways to shop:
-            <a className="blueLink" href="">
+            <a className="blueLink" href="#top">
               find an Apple Store
             </a>
             or
-            <a className="blueLink" href="">
+            <a className="blueLink" href="#top">
               other retailer
             </a>
             near you. Or call 0800 048 0408.
@@ -212,14 +212,14 @@ const Footer = () => {
               {creditsList.map((item, i) => {
                 return (
                   <div key={i} className="footerCredits__order__details">
-                    <a href=""> {item} </a>
+                    <a href="#top"> {item} </a>
                   </div>
                 );
               })}
             </div>
 
             <div className="footerCredits__order__languageAlign">
-              <a href="">United Kingdom</a>
+              <a href="#top">United Kingdom</a>
             </div>
           </div>
         </div>

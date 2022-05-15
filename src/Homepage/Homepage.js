@@ -16,8 +16,8 @@ const UnicefBlock = () => {
   return (
     <div className="unicefSection">
       <div className="unicef">
-        <img className="unicef__image" src={unicefImg} />
-        <a className="unicef__link unicef__link--blue" href="">
+        <img alt="unicef" className="unicef__image" src={unicefImg} />
+        <a className="unicef__link unicef__link--blue" href="#top">
           <p>Donate to support families affected by the war in Ukraine</p>
         </a>
       </div>
@@ -32,11 +32,11 @@ const Body = () => {
         <h1>iPhone 13 Pro</h1>
         <h3>Oh. So. Pro.</h3>
         <div className="bluelinkContainer">
-          <a href="">
+          <a href="#top">
             Learn more <span>&gt;</span>
           </a>
 
-          <a href="">
+          <a href="#top">
             Buy<span>&gt;</span>
           </a>
         </div>
@@ -45,14 +45,18 @@ const Body = () => {
       <div className="iphoneseSection iphoneseSection--background">
         <h4>The new</h4>
         <div>
-          <img src={iphoneseImg} className="iphoneseSection__image" />
+          <img
+            alt="iphoneSE"
+            src={iphoneseImg}
+            className="iphoneseSection__image"
+          />
         </div>
         <h3>Love the power. Love the price.</h3>
         <div className="bluelinkContainer">
-          <a href="">
+          <a href="#top">
             Learn more <span>&gt;</span>
           </a>
-          <a href="">
+          <a href="#top">
             Buy<span>&gt;</span>
           </a>
         </div>
@@ -60,14 +64,18 @@ const Body = () => {
 
       <div className="ipadAirSection ipadAirSection--background">
         <div>
-          <img src={ipadAirImg} className="ipadAirSection__image" />
+          <img
+            alt="ipad-air"
+            src={ipadAirImg}
+            className="ipadAirSection__image"
+          />
         </div>
         <h4>Light. Bright. Full of might</h4>
         <div className="bluelinkContainer">
-          <a href="">
+          <a href="#top">
             Learn more <span>&gt;</span>
           </a>
-          <a href="">
+          <a href="#top">
             Buy<span>&gt;</span>
           </a>
         </div>
@@ -76,14 +84,14 @@ const Body = () => {
       <div className="gridItems">
         <div className="wwdc22Section wwdc22Section--background">
           <div>
-            <img src={wwdc22Img} className="wwdc22Section__image" />
+            <img alt="wwdc" src={wwdc22Img} className="wwdc22Section__image" />
           </div>
           <h4>
             The Worldwide Developers Conference is coming. Join us online 6-10
             June.
           </h4>
           <div className="bluelinkContainer">
-            <a href="">
+            <a href="#top">
               Learn more <span>&gt;</span>
             </a>
           </div>
@@ -91,14 +99,18 @@ const Body = () => {
 
         <div className="watchSection watchSection--background">
           <div>
-            <img src={watchImg} className="watchSection__image" />
+            <img
+              alt="apple-watch"
+              src={watchImg}
+              className="watchSection__image"
+            />
           </div>
           <h4>It's out largest display yet.</h4>
           <div className="bluelinkContainer">
-            <a href="">
+            <a href="#top">
               Learn more <span>&gt;</span>
             </a>
-            <a href="">
+            <a href="#top">
               Buy<span>&gt;</span>
             </a>
           </div>
@@ -108,10 +120,10 @@ const Body = () => {
           <h1>Studio Display</h1>
           <h4>A sight to be bold.</h4>
           <div className="bluelinkContainer">
-            <a href="">
+            <a href="#top">
               Learn more <span>&gt;</span>
             </a>
-            <a href="">
+            <a href="#top">
               Buy<span>&gt;</span>
             </a>
           </div>
@@ -121,10 +133,10 @@ const Body = () => {
           <h1>Mac Studio</h1>
           <h4>Empower station.</h4>
           <div className="bluelinkContainer">
-            <a href="">
+            <a href="#top">
               Learn more <span>&gt;</span>
             </a>
-            <a href="">
+            <a href="#top">
               Buy<span>&gt;</span>
             </a>
           </div>
@@ -132,14 +144,18 @@ const Body = () => {
 
         <div className="fitnessSection fitnessSection--background">
           <div>
-            <img src={fitnessImg} className="fitnessSection__image" />
+            <img
+              alt="fitness"
+              src={fitnessImg}
+              className="fitnessSection__image"
+            />
           </div>
           <h4>It's out largest display yet.</h4>
           <div className="bluelinkContainer">
-            <a href="">
+            <a href="#top">
               Learn more <span>&gt;</span>
             </a>
-            <a href="">
+            <a href="#top">
               Shop Apple Watch<span>&gt;</span>
             </a>
           </div>
@@ -147,14 +163,18 @@ const Body = () => {
 
         <div className="tvSection tvSection--background">
           <div>
-            <img src={tvImg} className="tvSection__image" />
+            <img alt="tv+" src={tvImg} className="tvSection__image" />
           </div>
           <div>
-            <img src={shiningGirls} className="tvSection__shiningGirls" />
+            <img
+              alt="shining-girls"
+              src={shiningGirls}
+              className="tvSection__shiningGirls"
+            />
           </div>
           <h4> Realiti is a matter of perspective</h4>
           <div className="whitelinkContainer">
-            <a href="">
+            <a href="#top">
               Stream now <span>&gt;</span>
             </a>
           </div>

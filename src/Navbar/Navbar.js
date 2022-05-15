@@ -15,11 +15,11 @@ import searchNav from "../images/globalnav_search_image__cbllq1gkias2_large.svg"
 import bagNav from "../images/globalnav_bag_image__yzte50i47ciu_large.svg";
 
 const NavButton = (props) => {
-  const { srcImg, listClass, imageClass } = props;
+  const { srcImg, listClass, imageClass, name } = props;
   return (
     <li className={listClass}>
-      <a className="navBtn">
-        <img src={srcImg} className={imageClass} />
+      <a href="#top" className="navBtn">
+        <img alt={name} src={srcImg} className={imageClass} />
       </a>
     </li>
   );
@@ -30,42 +30,52 @@ const Navbar = () => {
     {
       id: 0,
       img: storeNav,
+      name: "store",
     },
     {
       id: 1,
       img: macNav,
+      name: "mac",
     },
     {
       id: 2,
       img: ipadNav,
+      name: "ipad",
     },
     {
       id: 3,
       img: iphoneNav,
+      name: "iphone",
     },
     {
       id: 4,
       img: watchNav,
+      name: "watch",
     },
     {
       id: 5,
       img: airpodsNav,
+      name: "airpods",
     },
     {
       id: 6,
       img: tvhomeNav,
+      name: "tvhome",
     },
     {
       id: 7,
       img: onlyonappleNav,
+      name: "only-on-apple",
     },
     {
       id: 8,
       img: accessoriesNav,
+      name: "accessories",
     },
     {
       id: 9,
       img: supportNav,
+      name: "support",
     },
   ];
   return (
@@ -76,7 +86,7 @@ const Navbar = () => {
             <span className="burgerMenu__btn">=</span>
           </li>
 
-          <NavButton srcImg={logoNav} />
+          <NavButton srcImg={logoNav} name="logo" />
 
           {mobileHideElements.map((current) => {
             return (
@@ -84,6 +94,7 @@ const Navbar = () => {
                 key={current.id}
                 srcImg={current.img}
                 listClass="mobileHide"
+                name={current.name}
               />
             );
           })}
