@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./Footer.scss";
 
+import submenu from "../api/submenu.json";
+
 const MenuItem = (props) => {
   const { title, children } = props;
   const [showMenu, setShowMenu] = useState(false);
@@ -74,98 +76,6 @@ const DesktopFooter = (props) => {
 };
 
 const Footer = () => {
-  const allSubmenu = [
-    {
-      name: "Shop and Learn",
-      submenu: [
-        "Store",
-        "Mac",
-        "iPad",
-        "iPhone",
-        "Watch",
-        "TV & Home",
-        "iPod touch",
-        "AirTag",
-        "Accessories",
-        "Gift Cards",
-      ],
-    },
-    {
-      name: "Services",
-      submenu: [
-        "Apple Music",
-        "Apple TV +",
-        "Apple Fitness+",
-        "Apple News+",
-        "Apple Arcade",
-        "iCloud",
-        "Apple One",
-        "Apple Pay",
-        "Apple Books",
-        "Apple Podcasts",
-        "App Store",
-      ],
-    },
-    {
-      name: "Account",
-      submenu: ["Manage Your Apple ID", "Apple Store Account", "iCloud.com"],
-    },
-    {
-      name: "Apple Store",
-      submenu: [
-        "Find a Store",
-        "Genius Bar",
-        "Today at Apple",
-        "Apple Summer Camp",
-        "Apple Store App",
-        "Refurbished and Clearance",
-        "Financing",
-        "Apple Trade In",
-        "Order Status",
-        "Shopping Help",
-      ],
-    },
-    {
-      name: "For Business",
-      submenu: ["Apple and Business", "Shop for Business"],
-    },
-    {
-      name: "For Education",
-      submenu: ["Apple and Education", "Shop for University"],
-    },
-    {
-      name: "For Healthcare",
-      submenu: [
-        "Apple in Healthcare",
-        "Health on Apple Watch",
-        "Health Records on iPhone",
-      ],
-    },
-    {
-      name: "Apple Values",
-      submenu: [
-        "Accessibility",
-        "Environment",
-        "Privacy",
-        "Supplier Responsibility",
-      ],
-    },
-    {
-      name: "About Apple",
-      submenu: [
-        "Newsroom",
-        "Apple Leadership",
-        "Career Opportunities",
-        "Warranty",
-        "Investors",
-        "Ethics & Compliance",
-        "Events",
-        "European Job Creation",
-        "Contact Apple",
-      ],
-    },
-  ];
-
   const creditsList = [
     "Privacy Policy",
     "Use of Cookies",
@@ -186,8 +96,8 @@ const Footer = () => {
             Restrictions and other <a href="#top">terms</a> apply.
           </div>
 
-          <MobileFooter allSubmenu={allSubmenu} />
-          <DesktopFooter allSubmenu={allSubmenu} />
+          <MobileFooter allSubmenu={submenu} />
+          <DesktopFooter allSubmenu={submenu} />
         </div>
 
         <div>
