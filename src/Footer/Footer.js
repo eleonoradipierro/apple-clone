@@ -55,11 +55,9 @@ const DesktopFooter = (props) => {
     <div className="footerMenuDesktop">
       {allSubmenu.map((menu, i) => {
         return (
-          <div className="footerMenuDesktop__items">
+          <div key={i} className="footerMenuDesktop__items">
             <ul className="footerMenuDesktop__list">
-              <li key={i} className="footerMenuDesktop__list__boldElem">
-                {menu.name}
-              </li>
+              <li className="footerMenuDesktop__list__boldElem">{menu.name}</li>
               {menu.submenu.map((current, j) => {
                 return (
                   <li key={j}>
