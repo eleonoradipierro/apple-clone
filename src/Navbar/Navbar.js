@@ -1,4 +1,5 @@
 import "./Navbar.scss";
+import { useState } from "react";
 
 import logoNav from "../images/globalnav_apple_image__b5er5ngrzxqq_large.svg";
 import storeNav from "../images/globalnav_links_store_image__c7jy08initqq_large.svg";
@@ -26,6 +27,8 @@ const NavButton = (props) => {
 };
 
 const Navbar = () => {
+  const [burgerClick, setBurgerClick] = useState(false);
+
   const mobileHideElements = [
     {
       id: 0,
@@ -78,12 +81,21 @@ const Navbar = () => {
       name: "support",
     },
   ];
+
   return (
     <>
       <nav>
         <ul className="navContainer">
           <li className="burgerMenu">
-            <span className="burgerMenu__btn">=</span>
+            <button
+              className="burgerMenu__btn"
+              onClick={() => {
+                setBurgerClick(!burgerClick);
+                console.log(burgerClick);
+              }}
+            >
+              {burgerClick ? "x" : "="}
+            </button>
           </li>
 
           <NavButton srcImg={logoNav} name="logo" />
@@ -104,9 +116,38 @@ const Navbar = () => {
             listClass="mobileHide"
             imageClass="searchImage"
           />
-          <NavButton srcImg={bagNav} />
+
+          {!burgerClick && <NavButton srcImg={bagNav} />}
+          {burgerClick && <NavButton srcImg="" listClass="liAlign" />}
         </ul>
+
+        {burgerClick && (
+          <div className="burgerInput">
+            <input
+              type="text"
+              className="burgerInput__input"
+              placeholder="Search apple.com"
+            />
+          </div>
+        )}
       </nav>
+
+      {burgerClick && (
+        <div className="burgerList">
+          <ul className="burgerList__items">
+            <li className="burgerList__items__item">Store</li>
+            <li className="burgerList__items__item">Mac</li>
+            <li className="burgerList__items__item">iPad</li>
+            <li className="burgerList__items__item">iPhone</li>
+            <li className="burgerList__items__item">Watch</li>
+            <li className="burgerList__items__item">AirPods</li>
+            <li className="burgerList__items__item">TV&Home</li>
+            <li className="burgerList__items__item">Only on Apple</li>
+            <li className="burgerList__items__item">Accessories</li>
+            <li className="burgerList__items__item">Support</li>
+          </ul>
+        </div>
+      )}
     </>
   );
 };
