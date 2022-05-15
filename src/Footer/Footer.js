@@ -31,11 +31,11 @@ const MobileFooter = (props) => {
       <ul className="footerMenuMobile__items footerMenuMobile__items--mobile">
         {allSubmenu.map((menu, i) => {
           return (
-            <MenuItem title={menu.name}>
+            <MenuItem key={i} title={menu.name}>
               <ul className="itemsMobile__detail">
                 {menu.submenu.map((current, j) => {
                   return (
-                    <li>
+                    <li key={j}>
                       <a href="">{current}</a>
                     </li>
                   );
@@ -57,10 +57,12 @@ const DesktopFooter = (props) => {
         return (
           <div className="footerMenuDesktop__items">
             <ul className="footerMenuDesktop__list">
-              <li className="footerMenuDesktop__list__boldElem">{menu.name}</li>
+              <li key={i} className="footerMenuDesktop__list__boldElem">
+                {menu.name}
+              </li>
               {menu.submenu.map((current, j) => {
                 return (
-                  <li>
+                  <li key={j}>
                     <a href="">{current}</a>
                   </li>
                 );
@@ -211,7 +213,7 @@ const Footer = () => {
             <div className="footerCredits__order">
               {creditsList.map((item, i) => {
                 return (
-                  <div className="footerCredits__order__details">
+                  <div key={i} className="footerCredits__order__details">
                     <a href=""> {item} </a>
                   </div>
                 );
